@@ -15,6 +15,12 @@
 		C7438D19202948350021406F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7438D17202948350021406F /* LaunchScreen.storyboard */; };
 		C7438D24202948350021406F /* ZYExpandableTextCellDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C7438D23202948350021406F /* ZYExpandableTextCellDemoTests.m */; };
 		C7438D2F202948360021406F /* ZYExpandableTextCellDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C7438D2E202948360021406F /* ZYExpandableTextCellDemoUITests.m */; };
+		C7438D3F202949670021406F /* ZY_TextView.m in Sources */ = {isa = PBXBuildFile; fileRef = C7438D3E202949670021406F /* ZY_TextView.m */; };
+		C7438D4320294ABC0021406F /* textViewTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C7438D4120294ABC0021406F /* textViewTableViewCell.m */; };
+		C7438D4420294ABC0021406F /* textViewTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C7438D4220294ABC0021406F /* textViewTableViewCell.xib */; };
+		C7438D472029504A0021406F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7438D462029504A0021406F /* UIKit.framework */; };
+		C7438D49202950510021406F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7438D48202950510021406F /* Foundation.framework */; };
+		C7438D4B2029505A0021406F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7438D4A2029505A0021406F /* CoreGraphics.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +57,14 @@
 		C7438D2A202948360021406F /* ZYExpandableTextCellDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZYExpandableTextCellDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7438D2E202948360021406F /* ZYExpandableTextCellDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZYExpandableTextCellDemoUITests.m; sourceTree = "<group>"; };
 		C7438D30202948360021406F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C7438D3D202949670021406F /* ZY_TextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZY_TextView.h; sourceTree = "<group>"; };
+		C7438D3E202949670021406F /* ZY_TextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZY_TextView.m; sourceTree = "<group>"; };
+		C7438D4020294ABC0021406F /* textViewTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = textViewTableViewCell.h; sourceTree = "<group>"; };
+		C7438D4120294ABC0021406F /* textViewTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = textViewTableViewCell.m; sourceTree = "<group>"; };
+		C7438D4220294ABC0021406F /* textViewTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = textViewTableViewCell.xib; sourceTree = "<group>"; };
+		C7438D462029504A0021406F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		C7438D48202950510021406F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C7438D4A2029505A0021406F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +72,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7438D4B2029505A0021406F /* CoreGraphics.framework in Frameworks */,
+				C7438D49202950510021406F /* Foundation.framework in Frameworks */,
+				C7438D472029504A0021406F /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +102,7 @@
 				C7438D22202948350021406F /* ZYExpandableTextCellDemoTests */,
 				C7438D2D202948360021406F /* ZYExpandableTextCellDemoUITests */,
 				C7438D07202948350021406F /* Products */,
+				C7438D452029504A0021406F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,10 +119,14 @@
 		C7438D08202948350021406F /* ZYExpandableTextCellDemo */ = {
 			isa = PBXGroup;
 			children = (
+				C7438D3C202949460021406F /* View */,
 				C7438D0C202948350021406F /* AppDelegate.h */,
 				C7438D0D202948350021406F /* AppDelegate.m */,
 				C7438D0F202948350021406F /* ViewController.h */,
 				C7438D10202948350021406F /* ViewController.m */,
+				C7438D4020294ABC0021406F /* textViewTableViewCell.h */,
+				C7438D4120294ABC0021406F /* textViewTableViewCell.m */,
+				C7438D4220294ABC0021406F /* textViewTableViewCell.xib */,
 				C7438D12202948350021406F /* Main.storyboard */,
 				C7438D15202948350021406F /* Assets.xcassets */,
 				C7438D17202948350021406F /* LaunchScreen.storyboard */,
@@ -138,6 +160,25 @@
 				C7438D30202948360021406F /* Info.plist */,
 			);
 			path = ZYExpandableTextCellDemoUITests;
+			sourceTree = "<group>";
+		};
+		C7438D3C202949460021406F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C7438D3D202949670021406F /* ZY_TextView.h */,
+				C7438D3E202949670021406F /* ZY_TextView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C7438D452029504A0021406F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C7438D4A2029505A0021406F /* CoreGraphics.framework */,
+				C7438D48202950510021406F /* Foundation.framework */,
+				C7438D462029504A0021406F /* UIKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -250,6 +291,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C7438D19202948350021406F /* LaunchScreen.storyboard in Resources */,
+				C7438D4420294ABC0021406F /* textViewTableViewCell.xib in Resources */,
 				C7438D16202948350021406F /* Assets.xcassets in Resources */,
 				C7438D14202948350021406F /* Main.storyboard in Resources */,
 			);
@@ -276,8 +318,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7438D4320294ABC0021406F /* textViewTableViewCell.m in Sources */,
 				C7438D11202948350021406F /* ViewController.m in Sources */,
 				C7438D0E202948350021406F /* AppDelegate.m in Sources */,
+				C7438D3F202949670021406F /* ZY_TextView.m in Sources */,
 				C7438D0B202948350021406F /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
